@@ -1,0 +1,21 @@
+<div *ngIf="exibeCursosGraduacao">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Curso</th>
+                    <th>Duração em anos</th>
+                    <th>Tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor ="let cursos of listaGraduacao">
+                    <td>{{cursos.nome}}</td>
+                    <td>{{cursos.duracao}}</td>
+                    <td>{{cursos.tipo}}</td>
+                    <td> <button (click)="maisInformacoes()" class="btn btn-primary mr-2">+Informações</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <span>{{valorGraduacao}}</span>
+</div>

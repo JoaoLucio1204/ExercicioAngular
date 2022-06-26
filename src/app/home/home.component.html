@@ -1,0 +1,18 @@
+<mat-toolbar>
+    <span>My App</span>
+    <span class="example-spacer"></span>
+ 
+  </mat-toolbar>
+  
+<h1>O melhor para você e sua carreira!</h1>
+
+    <p>Com cursos técnicos, graduação e pós-graduação, temos um catálogo de cursos que abrange diversas áreas do conhecimneto</p>
+    <p>Cursos presenciais e EAD</p>
+
+    <button (click)="exibeTecnico()" class="btn btn-primary mr-2">Exibir catálogo Cursos Técnicos</button>
+    <button (click)="exibeGraduacao()" class="btn btn-primary mr-2">Exibir catálogo Cursos Graduação</button>
+    <button (click)="exibePosGraduacao()" class="btn btn-primary mr-2">Exibir catálogo Cursos Pós Graduação</button>
+
+    <app-cursos-tecnicos [exibeTecnicos]="exibeTecnicos"></app-cursos-tecnicos>
+    <app-cursos-graduacao [exibeCursosGraduacao]="exibeCursosGraduacao"></app-cursos-graduacao>
+    <app-cursos-pos-graduacao [exibeCursosPosGraduacao]="exibeCursosPosGraduacao"></app-cursos-pos-graduacao>
